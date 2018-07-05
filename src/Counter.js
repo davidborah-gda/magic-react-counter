@@ -27,10 +27,12 @@ class Counter extends Component {
       });
     }
     render() {
+      console.log(this.props);
         return (
             <div>
+              <h1>{this.props.title}</h1>
                 <button onClick={this.increment.bind(this)}>+</button>
-                <h1>{this.state.count}</h1>
+                <p>{this.state.count}</p>
                 <button onClick={this.decrement.bind(this)}>-</button>
                 <input type="number" 
                 min="1" 
